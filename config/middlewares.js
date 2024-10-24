@@ -14,7 +14,7 @@ module.exports = ({ env }) => [
             "'self'",
             'data:',
             'blob:',
-            'market-assets.strapi.io',
+            'market-assets.strapi.io', 
             env('S3_BUCKET') + '.' + env('S3_ENDPOINT'),
           ],
           'media-src': [
