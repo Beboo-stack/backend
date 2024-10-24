@@ -3,7 +3,7 @@ module.exports = ({ env }) => ({
     secret: env('secret.test-store-kk9f66u6t9'),
   },
   apiToken: {
-    salt: env('secret.test-store-kk9f66u6t9'),
+    salt: env('API_TOKEN_SALT', 'apiTokenSalt'),
   },
   transfer: {
     token: {
